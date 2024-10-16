@@ -265,3 +265,78 @@ hr{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+#nightdarkBtn {
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#locationBtn {
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+button:active {
+    transform: scale(0.95);
+    background-color: #0056b3;
+}
+.light-mode {
+    --bg-color1: #f0f0f0;
+    --bg-color2: #e0e0e0;
+    color: #000;
+}
+.light-mode .card {
+    background-color: var(--bg-color2);
+}
+.light-mode #city_input,
+.light-mode #searchBtn,
+.light-mode #locationBtn,
+.light-mode #settingsBtn {
+    background-color: #000;
+    color: #fff;
+}
+#settingsBtn {
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 4px;
+    padding: 12px;
+    right: 0;
+}
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    right: 0;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
