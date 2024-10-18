@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hourly Forecast</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hourly-forecast {
+            display: flex;
+            justify-content: space-between;
+            overflow-x: auto;
+        }
+
+        .card {
+            background: #333;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            flex: 0 0 auto;
+            width: 100px;
+            margin: 0 5px;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin: 10px 0;
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+
+        .card p:first-of-type {
+            font-size: 16px;
+        }
+
+        .card p:last-of-type {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Today at</h2>
+    <div class="hourly-forecast">
+        <div class="card">
+            <p>9 AM</p>
+            <img src="https://openweathermap.org/img/wn/09d.png" alt="Rainy">
+            <p>18&deg;C</p>
+        </div>
+        <div class="card">
+            <p>10 AM</p>
+            <img src="https://openweathermap.org/img/wn/04d.png" alt="Cloudy">
+            <p>19&deg;C</p>
+        </div>
+        <div class="card">
+            <p>11 AM</p>
+            <img src="https://openweathermap.org/img/wn/02d.png" alt="Partly Cloudy">
+            <p>23&deg;C</p>
+        </div>
+        <div class="card">
+            <p>12 PM</p>
+            <img src="https://openweathermap.org/img/wn/01d.png" alt="Sunny">
+            <p>28&deg;C</p>
+        </div>
+        <div class="card">
+            <p>1 PM</p>
+            <img src="https://openweathermap.org/img/wn/10d.png" alt="Rainy">
+            <p>28&deg;C</p>
+        </div>
+        <div class="card">
+            <p>2 PM</p>
+            <img src="https://openweathermap.org/img/wn/13d.png" alt="Snowy">
+            <p>-5&deg;C</p>
+        </div>
+        <div class="card">
+            <p>3 PM</p>
+            <img src="https://openweathermap.org/img/wn/11d.png" alt="Stormy">
+            <p>20&deg;C</p>
+        </div>
+        <div class="card">
+            <p>4 PM</p>
+            <img src="https://openweathermap.org/img/wn/50d.png" alt="Foggy">
+            <p>17&deg;C</p>
+        </div>
+    </div>
+</body>
+</html>

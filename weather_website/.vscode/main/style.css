@@ -296,6 +296,7 @@ button:active {
     background-color: var(--bg-color2);
 }
 .light-mode #city_input,
+.light-mode #mapBtn,
 .light-mode #searchBtn,
 .light-mode #locationBtn,
 .light-mode #settingsBtn {
@@ -339,4 +340,51 @@ button:active {
 }
 .dropdown:hover .dropdown-content {
     display: block;
+}
+#mapBtn a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+#mapBtn {
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#mapBtn:hover {
+    background-color: #ddd;
+}
+.subnav-items {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.subnav-item {
+    background: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.subnav-item:hover {
+    background: #555;
+}
+.nav-buttons a {
+    margin-right: 10px;
+    background: white;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.nav-buttons a:hover {
+    background: #f0f0f0;
 }
